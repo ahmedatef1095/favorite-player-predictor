@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/303853856497491962/6a03bfee78f44b3e8eb9f93df847995b/artifacts
+end_time: 1763978187476
+entry_point_name: ''
+experiment_id: '303853856497491962'
+lifecycle_stage: active
+run_id: 6a03bfee78f44b3e8eb9f93df847995b
+run_name: carefree-ant-894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763978180209
+status: 3
+tags: []
+user_id: aabdelb2

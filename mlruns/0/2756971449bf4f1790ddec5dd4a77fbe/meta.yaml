@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/0/2756971449bf4f1790ddec5dd4a77fbe/artifacts
+end_time: 1763908930835
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2756971449bf4f1790ddec5dd4a77fbe
+run_name: blushing-slug-958
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763908930775
+status: 3
+tags: []
+user_id: aabdelb2

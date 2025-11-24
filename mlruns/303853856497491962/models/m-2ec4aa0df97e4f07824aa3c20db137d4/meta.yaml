@@ -1,0 +1,10 @@
+artifact_location: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/303853856497491962/models/m-2ec4aa0df97e4f07824aa3c20db137d4/artifacts
+creation_timestamp: 1763977000451
+experiment_id: '303853856497491962'
+last_updated_timestamp: 1763977007554
+model_id: m-2ec4aa0df97e4f07824aa3c20db137d4
+model_type: null
+name: player-predictor-model
+source_run_id: 0760143773b347a180a80abb33132ae1
+status: 2
+status_message: null

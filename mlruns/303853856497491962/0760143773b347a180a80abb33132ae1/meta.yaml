@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/303853856497491962/0760143773b347a180a80abb33132ae1/artifacts
+end_time: 1763977007592
+entry_point_name: ''
+experiment_id: '303853856497491962'
+lifecycle_stage: active
+run_id: 0760143773b347a180a80abb33132ae1
+run_name: receptive-crow-228
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763977000353
+status: 3
+tags: []
+user_id: aabdelb2
