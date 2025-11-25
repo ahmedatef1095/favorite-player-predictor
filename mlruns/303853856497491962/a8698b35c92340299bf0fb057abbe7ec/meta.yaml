@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/303853856497491962/a8698b35c92340299bf0fb057abbe7ec/artifacts
+end_time: 1764077241304
+entry_point_name: ''
+experiment_id: '303853856497491962'
+lifecycle_stage: active
+run_id: a8698b35c92340299bf0fb057abbe7ec
+run_name: rogue-pig-162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764077234541
+status: 3
+tags: []
+user_id: aabdelb2

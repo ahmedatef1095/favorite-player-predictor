@@ -70,6 +70,8 @@ with mlflow.start_run() as run:
         sk_model=model_pipeline,
         artifact_path="player-predictor-model",
         # Add an input example to automatically log the model signature
+        # Register the model in the MLflow Model Registry
+        registered_model_name="player-predictor",
         input_example=X_train.head(1)
     )
     
