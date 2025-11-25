@@ -16,6 +16,11 @@ COPY players_dataset.csv .
 COPY templates/ ./templates/
 COPY mlruns/ ./mlruns/
 
+# Step 5.5: Set the MLflow Tracking URI environment variable.
+# This forces MLflow inside the container to use the correct Linux path to the
+# mlruns directory, overriding the absolute Windows path stored in the metadata.
+ENV MLFLOW_TRACKING_URI=file:///app/mlruns
+
 # Step 6: Make the port the app runs on available to the outside world
 EXPOSE 5001
 
