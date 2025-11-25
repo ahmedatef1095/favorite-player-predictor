@@ -1,0 +1,10 @@
+    loaded_model = mlflow.pyfunc.load_model(logged_model_uri)
+  File "/usr/local/lib/python3.10/site-packages/mlflow/tracing/provider.py", line 616, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/mlflow/pyfunc/__init__.py", line 1129, in load_model
+    local_path = _download_artifact_from_uri(
+  File "/usr/local/lib/python3.10/site-packages/mlflow/tracking/artifact_utils.py", line 128, in _download_artifact_from_uri
+    return repo.download_artifacts(artifact_path=artifact_path, dst_path=output_path)
+  File "/usr/local/lib/python3.10/site-packages/mlflow/store/artifact/runs_artifact_repo.py", line 230, in download_artifacts
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Failed to download artifacts from path 'player-predictor-model', please ensure that the path is correct.
