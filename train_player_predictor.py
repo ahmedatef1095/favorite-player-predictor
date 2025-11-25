@@ -69,7 +69,8 @@ with mlflow.start_run() as run:
     mlflow.sklearn.log_model(
         sk_model=model_pipeline,
         artifact_path="player-predictor-model",
-        # Add an input example to automatically log the model signature
+        # This is the key change: Register the model by name.
+        registered_model_name="player-predictor",
         input_example=X_train.head(1)
     )
     

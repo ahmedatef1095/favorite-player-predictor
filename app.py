@@ -5,27 +5,18 @@ from flask import Flask, request, render_template
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
-# --- 1. Load Model and Artifacts at Startup ---
+# --- 1. Load Production Model from MLflow Model Registry ---
 
-# IMPORTANT: Replace this with the actual Run ID of your trained model
-LOGGED_MODEL_RUN_ID = '6a03bfee78f44b3e8eb9f93df847995b' # <-- PASTE YOUR RUN ID HERE
-
-if LOGGED_MODEL_RUN_ID == 'YOUR_RUN_ID_HERE':
-    print("="*50)
-    print("ERROR: Please update the 'LOGGED_MODEL_RUN_ID' in app.py")
-    print("You can find the Run ID in the MLflow UI.")
-    print("="*50)
-    exit()
-
-# Load the trained pipeline model from MLflow
-logged_model_uri = f"runs:/{LOGGED_MODEL_RUN_ID}/player-predictor-model"
+# This is the robust way to load a model. No more hardcoded Run IDs.
+model_name = "player-predictor"
+model_stage = "Production"
+logged_model_uri = f"models:/{model_name}/{model_stage}"
 loaded_model = mlflow.pyfunc.load_model(logged_model_uri)
 
-# Load the label encoder classes
-# Note: MLflow automatically downloads artifacts to a temp directory.
-# We need to construct the path to the downloaded artifact.
+# Dynamically find the run_id of the loaded model to get its associated artifacts.
 client = mlflow.tracking.MlflowClient()
-local_path = client.download_artifacts(LOGGED_MODEL_RUN_ID, "model_meta/label_encoder_classes.json")
+run_id_of_loaded_model = loaded_model.metadata.run_id
+local_path = client.download_artifacts(run_id_of_loaded_model, "model_meta/label_encoder_classes.json")
 
 le = LabelEncoder()
 with open(local_path, 'r') as f:
@@ -78,4 +69,4 @@ def home():
     )
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5001) # Run on a different port than mlflow ui
+    app.run(debug=True, port=5001) # Run on a different port than mlflow ui
