@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ahmed/Projects/favorite-player-predictor/mlruns/956944883649401100/c9d2290888434608aca59da3e47d36dd/artifacts
+end_time: 1764079996082
+entry_point_name: ''
+experiment_id: '956944883649401100'
+lifecycle_stage: active
+run_id: c9d2290888434608aca59da3e47d36dd
+run_name: melodic-toad-945
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764079992540
+status: 3
+tags: []
+user_id: ahmed

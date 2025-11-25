@@ -1,6 +1,6 @@
-artifact_location: file:///C:/workset/AAA-Workset/mlflow-repo/mlruns/0
-creation_time: 1763908930310
+artifact_location: file:///home/ahmed/Projects/favorite-player-predictor/mlruns/0
+creation_time: 1764079992443
 experiment_id: '0'
-last_update_time: 1763908930310
+last_update_time: 1764079992443
 lifecycle_stage: active
 name: Default

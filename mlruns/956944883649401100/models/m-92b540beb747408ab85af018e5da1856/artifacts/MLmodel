@@ -1,0 +1,35 @@
+artifact_path: file:///home/ahmed/Projects/favorite-player-predictor/mlruns/956944883649401100/models/m-92b540beb747408ab85af018e5da1856/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.6.0
+model_id: m-92b540beb747408ab85af018e5da1856
+model_size_bytes: 5175
+model_uuid: m-92b540beb747408ab85af018e5da1856
+prompts: null
+run_id: c9d2290888434608aca59da3e47d36dd
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "club", "required": true}, {"type": "string",
+    "name": "national_team", "required": true}, {"type": "long", "name": "age", "required":
+    true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-25 14:13:12.595824'
